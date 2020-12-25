@@ -27,7 +27,7 @@ def compare(item1, item2):
         return 0
 
 
-with open("mathsgear.tsv") as present_list:
+with open("wish_list.tsv") as present_list:
     pairs = {k:v[:-1] for k, v in [s.split('\t') for s in present_list.readlines()]}.items()
 
 max_len = max([len(p[0]) for p in pairs])
